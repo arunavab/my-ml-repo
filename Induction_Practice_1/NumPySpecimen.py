@@ -1,0 +1,33 @@
+import numpy as np
+print("hello")
+# Single Dimensional Array
+n1 = np.array([10, 20, 30])
+# Multi Dimensional Array
+n11 = np.array([[10, 20, 30], [10, 20, 30]])
+print(n1)
+print(n11)
+print(type(n1))
+# Initializing Os array
+n3 = np.zeros((5, 5))
+print(n3)
+n5 = np.full((5, 5), 10)
+print(n5)
+n7 = np.arange(100, 600, 100)
+print(n7)
+print(type(n5))
+print(type(n7))
+nr = np.random.randint(1, 1000, 5)
+print(nr)
+print(nr.shape)
+n9 = np.zeros((5, 5))
+print(n9.shape)
+n9 = np.arange(1, 26)
+print(n9.shape)
+n9.shape = (5, 5)
+print(n9)
+print(n9.shape)
+a = np.array([10, 20])
+b = np.array([30, 40])
+print(np.sum([a, b], axis=0))
+print(np.sum([a, b], axis=1))
+

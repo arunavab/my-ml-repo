@@ -1,0 +1,23 @@
+class Human:
+    def __init__(self, name, age, height):
+        self.name = name
+        self.age = age
+        self.height = height
+
+    def human_properties(self):
+        return self.name, self.age, self.height
+
+    @staticmethod
+    def human_powers():
+        print("Humans are powerful")
+
+class Bengali(Human):
+    def do_what(self):
+        print("I " + self.name + " always eat fish")
+
+human1 = Human("God", 5000, 180)
+print(human1.human_properties())
+human1.human_powers()
+
+bengali1 = Bengali("Sukumar", 87, 182)
+bengali1.do_what()
